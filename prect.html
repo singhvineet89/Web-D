@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    
+    <style>
+        *{
+            font-size: 12px;
+            font-family: Verdana;
+            box-sizing: border-box;
+        }
+    
+        table{
+            width:578px;
+            
+            border-spacing: 0;
+            
+        }
+
+        th ,td{
+          border: 3px solid coral;
+          padding: 3px;
+            
+        }
+        tr:first-child th:first-child{
+            border-top-left-radius: 10px;
+        }
+        tr:first-child th:last-child{
+            border-top-right-radius: 10px;
+        }
+        tr:last-child td:first-child{
+            border-bottom-left-radius: 10px;
+        }
+        tr:last-child td:last-child{
+            border-bottom-right-radius: 10px;
+        }
+        .th1{
+            background: steelblue;
+            color:#fff;
+           
+        }
+        .td1{
+            background: skyblue;
+            color:red;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="th1">Col 1</th>
+            <th class="th1">Col 2</th>
+            <th class="th1">Col 3</th>
+        </tr>
+        <tr>
+            <td class="td1">1</td>
+            <td  class="td1">2</td>
+            <td  class="td1">3</td>
+        </tr>
+        <tr>
+            <td class="td1">4</td>
+            <td class="td1">5</td>
+            <td class="td1">6</td>
+        </tr>
+    </table>
+</body>
+</html>

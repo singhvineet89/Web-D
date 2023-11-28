@@ -1,0 +1,24 @@
+<html>
+
+
+<h1>Hello Doston!!</h1>
+<p id="ab"></p>
+<br>
+<br>
+<br>
+<script>
+    const student={
+        FirstName: "Ramu",
+        LastName: "Systumm",
+        RollNo: "2200290130187",
+        Branch: "IT",
+        Email: "vineet@gmail.com",
+        fullname : function(){
+           return this.FirstName+" "+this.LastName;
+           
+        }
+    };
+    document.getElementById("ab").innerHTML="The name of the student is "+student.fullname()+"<br>"+" and the roll no of the student is "+student.RollNo+"<br>"+" and his branch is "+student.Branch+"<br>"+" and lastly his email id is "+student.Email;
+
+</script>
+</html>

@@ -1,0 +1,108 @@
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            background-color: beige;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: black;
+        }
+        .nav {
+            display: flex;
+            list-style: none;
+        }
+        .nav li {
+            margin-left: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+            background-color: beige;
+        }
+        .contact h1 {
+            font-size: 48px;
+            color: black;
+        }
+        .contact p {
+            font-size: 24px;
+            color: black;
+        }
+        .contact form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            width: 800px;
+        }
+        .contact form input, .contact form textarea {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .contact form input[type="submit"] {
+            grid-column: span 2;
+            background-color: black;
+            color: white;
+        }
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            background-color: beige; 
+        }
+        .footer p {
+            font-size: 20px;
+            color: black; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">REALLY GREAT SITE</div>
+            <ul class="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CLIENTS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h1>Contact</h1>
+            <p>Please fill out the form below to send us an email.</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="NAME" required>
+                <input type="email" name="email" placeholder="EMAIL" required>
+                <input type="text" name="subject" placeholder="SUBJECT" required>
+                <textarea name="message" placeholder="MESSAGE" rows="10" required></textarea>
+                <input type="submit" value="SUBMIT">
+             </form>
+         </div>
+         <div class="footer">
+             <p>Hello@reallygreatsite.com</p>
+         </div>
+     </div>
+</body>
+</html>

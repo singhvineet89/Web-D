@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+*{
+box-sizing: border-box;
+} 
+ul{
+display: flex;
+justify-content: space-around;
+}
+.nav li{
+list-style: none;
+}
+.nav li a{
+text-decoration: none;
+color:black;
+font-weight: bolder;
+font-size: 20px;
+}
+footer p{
+text-align: center;
+}
+body {
+margin: 0;
+padding: 0;
+background: url('background-image.jpg') no-repeat center center fixed;
+background-size: cover;
+font-family: 'Arial', sans-serif;
+text-align: center;
+}
+.login-container {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+.login-form {
+background: rgba(255, 255, 255, 0.8);
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+h2 {
+color: #333;
+margin: 0 0 20px;
+}
+.input-container {
+position: relative;
+margin: 0 0 15px;
+}
+input {
+width: 100%;
+padding: 10px;
+border: none;
+border-bottom: 2px solid #007bff;
+outline: none;
+}
+input:focus + label,
+input:valid + label {
+top: -15px;
+font-size: 14px;
+color: #007bff;
+}
+#forg{
+text-decoration: none;
+color:green;
+margin-top: 3px;
+font-size: 13px;
+}
+</style>
+</head>
+<body>
+<div class="nav">
+<ul>
+<li><a href="task1page1.html">Home</a></li>
+<li><a href="#First">About us</a></li>
+<li><a href="task1page2.html">Gallery</a></li>
+<li><a href="#">Login</a></li>
+</ul>
+</div>
+<hr>
+<!-- ------------------------------------------------------------ -->
+<div class="login-container">
+<div class="login-form">
+<form id="login-form" action="login.php" method="POST">
+<div class="input-container">
+<input type="text" id="username" name="username" required>
+<label for="username">Username</label>
+</div>
+<div class="input-container">
+<input type="password" id="password" name="password"
+required>
+<label for="password">Password</label>
+</div>
+<input type="checkbox" id="foo"><label for="foo">Accept term 
+and Condition
+</label><br>
+<a href="#" id="forg">Forgotten Password?</a>
+</form>
+</div>
+</div>
+<hr>
+<footer>
+<p>@Copyright</p>
+</footer>
+</body>
+</html

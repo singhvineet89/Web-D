@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <h1>My Form</h1><br>
+    <form method="POST" action="secondpage.html" onsubmit="validate()">
+        <label for="fname">First Name</label>
+        <br>
+        <input type="text" name="firstname" id="fname" placeholder="Enter your first name" value="">
+        <br>
+        <label for="lname">Last Name</label>
+        <br>
+        <input type="text" name="lname" placeholder="Enter your last name" value="">
+        <br>
+        <label for="emailid">Email ID</label>
+        <br>
+        <input type="email" name="emailid" placeholder="Enter your email" value="">
+        <br>
+        <label for="pass">Password</label>
+        <br>
+        <input type="password" name="password" placeholder="Set your password" value="">
+        <br>
+        <label for="mobile">Mobile No</label>
+        <br>
+        <input type="number" name="mobile" placeholder="Enter your mobile no." value="">
+        <br>
+        <label for="dob">DOB</label>
+
+        <input type="date" name="dob" placeholder="Enter your date of birth" value="">
+        <br>
+        <label for="address">Address</label>
+        <br>
+        <textarea></textarea>
+        <br>
+        <input type="radio" name="gender" value="Male">
+        <label for ="male">Male</label>
+        <br>
+        <input type="radio" name="gender" value="Female">
+        <label for ="fmale">Female</label>
+        <br>
+        <input type="radio" name="gender" value="Others">
+        <label for ="others">Others</label>
+        <br><br>
+        <input type="checkbox" name="maths" value="Maths">
+        <label for ="maths">Maths</label><br>
+        <input type="checkbox" name="ds" value="Data Structures">
+        <label for ="ds">Data Structures</label><br>
+        <input type="checkbox" name="dstl" value="DSTL">
+        <label for ="dstl">DSTL</label><br>
+        <input type="checkbox" name="coa" value="COA">
+        <label for ="coa">COA</label><br><br>
+        <select>
+            <option value="">Choose</option>
+            <option value="WebDesigning">Web Designing</option>
+            <option value="DS">Data Structures</option>
+            <option value="DSTL">DSTL</option>
+            <option value="uhv">Universal HUman Values</option>
+            <option value="coa">Computer Organisation</option>
+
+        </select>
+        <br><br>
+        <input type="file" name="file" multiple>
+        <br><br>
+
+        <input type="submit">
+        <input type="reset">
+        
+
+
+    </form>
+    <script>
+        function validate(){
+            alert("Function is working");
+            document.getElementById("fname")
+        }
+    </script>
+</html>

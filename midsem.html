@@ -1,0 +1,98 @@
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            background-color: white;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: black;
+        }
+        .nav {
+            display: flex;
+            list-style: none;
+        }
+        .nav li {
+            margin-left: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            height: 600px;
+            background-color: white;
+        }
+        .main img {
+            width: 100%;
+            height: 100%;
+            object-fit: left;
+        }
+        .main h1 {
+            font-size: 48px;
+            color: black;
+        }
+        .main p {
+            font-size: 24px;
+            color: black;
+        }
+        .main button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 0px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">REALLY GREAT SITE</div>
+            <ul class="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CLIENTS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <br>
+       
+        <div class="main">
+             <img src="Images/woman.jpg" alt="Avery Davis" height="500" width="250">
+            <div class="text">
+                <h1 style="margin: 4%;">Hi! I'm Avery Davis</h1>
+                <p style="margin: 4%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt
+                    finibus diam. Nulla ornare mollis risus sed mattis. Nunc at mauris ut velit
+                    sollicitudin dignissim ac eget turpis. Duis quis laoreet tellus, eu
+                    condimentum mauris. Quisque sed imperdiet lorem. Fusce euismod risus
+                    eu tortor dapibus vehicula. Integer rhoncus lorem nec lobortis sagittis.
+                    Aenean elementum et lorem in suscipit. Suspendisse at diam eget quam
+                    laoreet viverra.</p>
+                    <br>
+                    <br>
+                    <br>
+                <button style="margin: 4%;">View Work</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
